@@ -1,0 +1,69 @@
+body{
+    font-family: "Comfortaa", sans-serif;
+}
+.parent{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.solid-circle{
+    height: 750px;
+    width: 750px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    right: -450px;
+    top: -120px;
+    z-index: 1;
+}
+.header-home{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    padding: 0px 10px;
+}
+
+#click-here-button{
+    background-color: white;
+    color: #476EF7;
+    box-shadow: 5px 5px 5px rgb(0,0,0,0.50);
+}
+#name{
+    color: #476EF7;
+    font-size: 100px;
+}
+
+.form-floating{
+    box-shadow: 4px 4px 4px rgb(0,0,0,0.25);
+    border-radius: 5px;
+}
+.login-button{
+    background-color: #476EF7;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px 25px;
+}
+.main-content{
+    padding: 2px 10px;
+
+}
+@media only screen and (max-width: 768px) {
+    .solid-circle{
+        background-color: black;
+        top: -450px;
+        right: -550px;
+    }
+    #name{
+        color: black;
+    }
+    #btn{
+        background-color: black;
+    }
+}
